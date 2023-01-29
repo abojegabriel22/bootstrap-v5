@@ -73,8 +73,8 @@
 
 .open-popup{
     visibility: visible;
-    top: 40%;
-    transform: translate(-50%, -50%) scale(0.5);
+    top: 25%;
+    transform: translate(-50%, -50%) scale(0.9);
 
     @include media-breakpoint-up(lg){
         top: 50%;
