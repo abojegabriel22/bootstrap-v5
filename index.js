@@ -16,3 +16,13 @@ function copyText(htmlElement) {
 document.querySelector("#copy-text-btn").onclick = function(){
     copyText(document.querySelector("#text"));
 }
+
+//show a popup modal window
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}

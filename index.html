@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,22 +40,30 @@
                 <a class="nav-link" href="#portfolio">portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#text">contacts</a>
+                <a class="nav-link" href="#text" onclick="openPopup()">contacts</a>
               </li>
               
             </ul>
             <button id="copy-text-btn" type="button" class="rounded-pill btn-rounded">08022911266
-              <span><i class="fas fa-copy"></i></span>
+              <span><i class="fas fa-copy" onclick="openPopup()"></i></span>
             </button>
           </div>
         </div>
       </nav>
+
 
       <!--START THE INTRO SECTION-->
 
       <section id="home" class="intro-section">
         <div class="container">
           <div class="row align-items-center">
+
+            <!--add a popup window-->
+      <div class="popup" id="popup">
+        <h3>+234 8022911266</h3>
+        <p>Has been successfully copied to clipboared</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
             <!--START THE CONTENT FOR THE INTRO-->
             <div class="col-md-6 intros">
               <h1 id="home" class="display-2">
